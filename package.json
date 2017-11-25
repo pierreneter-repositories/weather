@@ -1,13 +1,14 @@
 {
   "name": "weather",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A test project",
   "author": "Pierre Neter <pierreneter@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-
+    "backend:start": "docker-compose up -d",
+    "backend:stop": "docker-compose down",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js"
   },
